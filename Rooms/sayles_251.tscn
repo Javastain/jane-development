@@ -1,8 +1,51 @@
 [gd_scene format=3 uid="uid://dkh4yt6h1m7ar"]
 
 [ext_resource type="PackedScene" uid="uid://dwd2r04cl0dly" path="res://Characters/player.tscn" id="1_66bgp"]
+[ext_resource type="Texture2D" uid="uid://ba025erylofre" path="res://Art/floor_sprite.svg" id="2_pcme7"]
+[ext_resource type="Texture2D" uid="uid://dp654ngxx0tk2" path="res://Art/table_sprite.svg" id="3_8rlx0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bbfda"]
+size = Vector2(1377, 568)
 
 [node name="Sayles251" type="Node2D" unique_id=1587296276]
 
 [node name="Player" parent="." unique_id=1774028001 instance=ExtResource("1_66bgp")]
-position = Vector2(973, 94)
+position = Vector2(1852, 63)
+collision_mask = 2
+
+[node name="FloorSprite" type="Sprite2D" parent="." unique_id=1903250370]
+z_index = -5
+position = Vector2(964, 544)
+scale = Vector2(16.140625, 9.421875)
+texture = ExtResource("2_pcme7")
+
+[node name="Collisions" type="StaticBody2D" parent="." unique_id=1562049285]
+collision_layer = 2
+
+[node name="TableSprite" type="Sprite2D" parent="Collisions" unique_id=194777369]
+z_index = -4
+position = Vector2(385.99994, 579)
+scale = Vector2(1, 4.7187495)
+texture = ExtResource("3_8rlx0")
+
+[node name="TableSprite2" type="Sprite2D" parent="Collisions" unique_id=1701198183]
+z_index = -4
+position = Vector2(1011, 345)
+scale = Vector2(8.734375, 1)
+texture = ExtResource("3_8rlx0")
+
+[node name="TableSprite3" type="Sprite2D" parent="Collisions" unique_id=1045637877]
+z_index = -4
+position = Vector2(1634, 584.5)
+scale = Vector2(0.9218748, 4.7421875)
+texture = ExtResource("3_8rlx0")
+
+[node name="TableSprite4" type="Sprite2D" parent="Collisions" unique_id=466732067]
+z_index = -4
+position = Vector2(1013.99994, 816)
+scale = Vector2(8.734375, 1)
+texture = ExtResource("3_8rlx0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collisions" unique_id=1684851690]
+position = Vector2(1013.5, 596)
+shape = SubResource("RectangleShape2D_bbfda")
