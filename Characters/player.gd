@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var move_speed : float = 250
 
+var textbox_scene = preload("res://UI/textbox.tscn")
 
 var last_input_direction = Vector2.ZERO
 var input_direction = Vector2.ZERO
@@ -37,4 +38,6 @@ func _physics_process(_delta):
 	move_and_slide()
 
 func talk():
-	print("hi I'm Jane")
+	var textbox = textbox_scene.instantiate()
+	textbox.text_pages = ["Hi I'm Jane!"]
+	get_tree().get_root().add_child(textbox)
