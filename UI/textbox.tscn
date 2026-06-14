@@ -49,13 +49,13 @@ position = Vector2(26, -1)
 texture = ExtResource("1_m6e41")
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=671370935]
-position = Vector2(-149, -1)
+position = Vector2(-361, -1)
 texture = ExtResource("2_qdi28")
 
 [node name="Label" type="Label" parent="." unique_id=2099002322]
-offset_left = -85.0
+offset_left = -270.0
 offset_top = -26.0
-offset_right = 126.0
+offset_right = -59.0
 offset_bottom = 23.0
 theme_override_colors/font_color = Color(0.36810192, 0.36810198, 0.36810192, 1)
 text = "Test Text"

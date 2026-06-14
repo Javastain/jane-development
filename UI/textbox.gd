@@ -7,7 +7,7 @@ var page = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	scale = Vector2(3, 3)
+	scale = Vector2(2, 2)
 	position = Vector2(1000, get_viewport_rect().size.x/2)
 
 
