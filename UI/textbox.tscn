@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dgky5mijjjphn"]
+
+[ext_resource type="Texture2D" uid="uid://bjv1auxxj5yb" path="res://Art/textbox_sprite.png" id="1_m6e41"]
+[ext_resource type="Texture2D" uid="uid://cfvpsy7tly8ll" path="res://Art/character_box.png" id="2_qdi28"]
+
+[node name="Node2D" type="Node2D" unique_id=1122246520]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=888075392]
+position = Vector2(26, -1)
+texture = ExtResource("1_m6e41")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=671370935]
+position = Vector2(-149, -1)
+texture = ExtResource("2_qdi28")
+
+[node name="Label" type="Label" parent="." unique_id=2099002322]
+offset_left = -85.0
+offset_top = -26.0
+offset_right = 142.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0.36810192, 0.36810198, 0.36810192, 1)
+text = "Test Text"
