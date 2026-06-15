@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://qxcgc3v6kklh"]
+
+[ext_resource type="Texture2D" uid="uid://b4j2yj6qmtnm3" path="res://Art/choice_sprite.png" id="1_kfsbo"]
+[ext_resource type="Script" uid="uid://h6i2gmuqykde" path="res://UI/choice.gd" id="2_wlt8d"]
+
+[node name="Choice" type="Button" unique_id=519355500]
+offset_right = 151.0
+offset_bottom = 31.0
+focus_mode = 0
+theme_override_colors/font_color = Color(0.36862746, 0.36862746, 0.36862746, 1)
+text = "Test Text"
+icon = ExtResource("1_kfsbo")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("2_wlt8d")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

@@ -1,6 +1,7 @@
 extends Node
 
 var in_dialouge = false
+var player = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

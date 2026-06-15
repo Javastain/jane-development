@@ -9,6 +9,11 @@ var textbox_scene = preload("res://UI/textbox.tscn")
 var last_input_direction = Vector2.ZERO
 var input_direction = Vector2.ZERO
 
+
+func _ready():
+	Global.player = self
+
+
 func _physics_process(_delta):
 	
 	if not Global.in_dialouge:
@@ -49,7 +54,7 @@ func _physics_process(_delta):
 
 func talk(character):
 	var textbox = textbox_scene.instantiate()
-	textbox.character = character
+	textbox.full_name = character
 	match(character):
 		"Alex":
 			textbox.text_pages = ["Alex dialogue."]
@@ -58,7 +63,11 @@ func talk(character):
 		"David":
 			textbox.text_pages = ["David dialogue."]
 		"DebugJoe":
-			textbox.text_pages = ["Yeah, I'm here too. I don't know.", "Just go with it, I guess.", "&...Okay!"]
+			textbox.text_pages = ["Yeah, I'm here too. I don't know.", "Just go with it, I guess.", "&...Okay!", "?Do I know you from somewhere?[Yes, No]"]
+		"DebugJoe/Yes":
+			textbox.text_pages = ["I knew it!"]
+		"DebugJoe/No":
+			textbox.text_pages = ["Are you sure?"]
 		"Ivy":
 			textbox.text_pages = ["Ivy dialogue."]
 		"Jay":
