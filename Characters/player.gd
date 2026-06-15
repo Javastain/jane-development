@@ -36,6 +36,12 @@ func _physics_process(_delta):
 	# Update velocity
 	velocity = input_direction * move_speed
 	
+	# Layering
+	if(position.y > 500):
+		set_z_index(1)
+	else:
+		set_z_index(-1)
+	
 	# Move
 	move_and_slide()
 
