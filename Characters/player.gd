@@ -68,11 +68,19 @@ func talk(character):
 		"David":
 			textbox.text_pages = ["David dialogue."]
 		"DebugJoe":
-			textbox.text_pages = ["Yeah, I'm here too. I don't know.", "Just go with it, I guess.", "&...Okay!", "?Do I know you from somewhere?[Yes, No]"]
+			textbox.text_pages = ["Yeah, I'm here too. I don't know.", "Just go with it, I guess.", "&...Okay!", "?Do I know you from somewhere?[Yes; No]"]
 		"DebugJoe/Yes":
-			textbox.text_pages = ["I knew it!"]
+			textbox.text_pages = ["Oh!", "?I knew it![nahhhh lol i lied; yeah i actually created you]"]
+		"DebugJoe/Yes/nahhhh lol i lied":
+			textbox.text_pages = ["wth girl why"]
 		"DebugJoe/No":
-			textbox.text_pages = ["Are you sure?"]
+			textbox.text_pages = ["Are you sure?[idk bro; Yeah definitely]"]
+		"DebugJoe/No/yeah i actually created you":
+			textbox.text_pages = ["damn"]
+		"DebugJoe/idk bro":
+			textbox.text_pages = ["fair 'nough"]
+		"DebugJoe/Yeah definitely":
+			textbox.text_pages = ["ok"]
 		"Ivy":
 			textbox.text_pages = ["Ivy dialogue."]
 		"Jay":

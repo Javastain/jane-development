@@ -61,12 +61,13 @@ func _physics_process(delta):
 			_update_identifiers()
 
 func _update_identifiers():
+	print("okay")
 	if (text_pages[page][0] == '&'):
 		$Portrait.texture = jane_portrait
 		$Name.text = "Jane"
 	else:
 		if (text_pages[page][0] == '?'):
-			choices = text_pages[page].substr(text_pages[page].find('[')+1, text_pages[page].find(']')-text_pages[page].find('[')-1).split(", ")
+			choices = text_pages[page].substr(text_pages[page].find('[')+1, text_pages[page].find(']')-text_pages[page].find('[')-1).split("; ")
 			var i = 0
 			for choice in choices:
 				var scene = choice_scene.instantiate()
