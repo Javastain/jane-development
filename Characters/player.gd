@@ -55,26 +55,27 @@ func talk(character):
 	var textbox = textbox_scene.instantiate()
 	textbox.set_z_index(10)
 	textbox.character = character
-	if(character == "Alex"):
-		textbox.text_pages = ["Alex dialogue."]
-	elif(character == "Asa"):
-		textbox.text_pages = ["Asa dialogue."]
-	elif(character == "David"):
-		textbox.text_pages = ["David dialogue."]
-	elif(character == "DebugJoe"):
-		textbox.text_pages = ["Yeah, I'm here too. I don't know.", "Just go with it, I guess.", "&...Okay!"]
-	elif(character == "Ivy"):
-		textbox.text_pages = ["Ivy dialogue."]
-	elif(character == "Jay"):
-		textbox.text_pages = ["Jay dialogue."]
-	elif(character == "Jeremie"):
-		textbox.text_pages = ["Jeremie dialogue."]
-	elif(character == "John"):
-		textbox.text_pages = ["im john", "&Okay!!"]
-	elif(character == "Klaus"):
-		textbox.text_pages = ["Klaus dialogue."]
-	elif(character == "Ruby"):
-		textbox.text_pages = ["Ruby dialogue."]
-	else:
-		textbox.text_pages = ["Oops. This dialogue isn't ever supposed to show up. What happened?", "What did you do???"]
+	match(character):
+		"Alex":
+			textbox.text_pages = ["Alex dialogue."]
+		"Asa":
+			textbox.text_pages = ["Asa dialogue."]
+		"David":
+			textbox.text_pages = ["David dialogue."]
+		"DebugJoe":
+			textbox.text_pages = ["Yeah, I'm here too. I don't know.", "Just go with it, I guess.", "&...All right!"]
+		"Ivy":
+			textbox.text_pages = ["Ivy dialogue."]
+		"Jay":
+			textbox.text_pages = ["Jay dialogue."]
+		"Jeremie":
+			textbox.text_pages = ["Jeremie dialogue."]
+		"John":
+			textbox.text_pages = ["im john", "&Okay!"]
+		"Klaus":
+			textbox.text_pages = ["Klaus dialogue."]
+		"Ruby":
+			textbox.text_pages = ["Ruby dialogue."]
+		_:
+			textbox.text_pages = ["Oops. This dialogue isn't ever supposed to show up. What happened?", "What did you do???"]
 	get_tree().get_root().add_child(textbox)
