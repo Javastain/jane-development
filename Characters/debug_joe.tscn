@@ -6,6 +6,8 @@
 size = Vector2(129, 127)
 
 [node name="DebugJoe" type="CharacterBody2D" unique_id=1712948728 groups=["npcs"]]
+z_index = -2
+collision_layer = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2112094703]
 texture = ExtResource("1_ur53k")

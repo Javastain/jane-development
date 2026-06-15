@@ -13,7 +13,7 @@ var ivy_portrait = preload("res://Art/debug_joe_portrait.png")
 var jane_portrait = preload("res://Art/jane_portrait.png")
 var jay_portrait = preload("res://Art/debug_joe_portrait.png")
 var jeremie_portrait = preload("res://Art/debug_joe_portrait.png")
-var john_portrait = preload("res://Art/debug_joe_portrait.png")
+var john_portrait = preload("res://Art/john_portrait.png")
 var klaus_portrait = preload("res://Art/debug_joe_portrait.png")
 var ruby_portrait = preload("res://Art/debug_joe_portrait.png")
 

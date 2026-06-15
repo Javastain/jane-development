@@ -37,16 +37,21 @@ func _physics_process(_delta):
 	velocity = input_direction * move_speed
 	
 	# Layering
-	if(position.y > 500):
+	if(position.y > 903.0):
+		set_z_index(3)
+	elif(position.y > 500):
 		set_z_index(1)
-	else:
+	elif(position.y > 151.0):
 		set_z_index(-1)
+	else:
+		set_z_index(-4)
 	
 	# Move
 	move_and_slide()
 
 func talk(character):
 	var textbox = textbox_scene.instantiate()
+	textbox.set_z_index(10)
 	textbox.character = character
 	if(character == "Alex"):
 		textbox.text_pages = ["Alex dialogue."]
@@ -63,7 +68,7 @@ func talk(character):
 	elif(character == "Jeremie"):
 		textbox.text_pages = ["Jeremie dialogue."]
 	elif(character == "John"):
-		textbox.text_pages = ["John dialogue."]
+		textbox.text_pages = ["im john", "&Okay!!"]
 	elif(character == "Klaus"):
 		textbox.text_pages = ["Klaus dialogue."]
 	elif(character == "Ruby"):
