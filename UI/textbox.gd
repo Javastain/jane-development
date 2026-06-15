@@ -20,6 +20,7 @@ var ruby_portrait = preload("res://Art/debug_joe_portrait.png")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Global.in_dialouge = true
 	scale = Vector2(2, 2)
 	position = Vector2(1000, get_viewport_rect().size.x/2)
 
@@ -39,6 +40,7 @@ func _physics_process(delta):
 	if (Input.is_action_just_pressed("interact") or Input.is_action_just_pressed("left_click")):
 		page += 1
 		if page >= text_pages.size():
+			Global.in_dialouge = false
 			queue_free()
 		else:
 			if (text_pages[page][0] == '&'):

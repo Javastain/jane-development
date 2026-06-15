@@ -76,7 +76,7 @@ label_settings = SubResource("LabelSettings_ihabw")
 horizontal_alignment = 1
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=730079697]
-position = Vector2(135.99998, 21.999998)
+position = Vector2(332, 21)
 scale = Vector2(0.35, 0.35)
 sprite_frames = SubResource("SpriteFrames_3mva2")
 autoplay = "default"
