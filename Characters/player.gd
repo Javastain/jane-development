@@ -10,12 +10,14 @@ var last_input_direction = Vector2.ZERO
 var input_direction = Vector2.ZERO
 
 func _physics_process(_delta):
-	# Get input direction
-	input_direction = Vector2(
-		Input.get_action_strength('right') - Input.get_action_strength('left'),
-		Input.get_action_strength('down') - Input.get_action_strength('up')
-	)
 	
+	if not Global.in_dialouge:
+		# Get input direction
+		input_direction = Vector2(
+			Input.get_action_strength('right') - Input.get_action_strength('left'),
+			Input.get_action_strength('down') - Input.get_action_strength('up')
+		)
+		
 	input_direction = input_direction.normalized()
 	
 	if(Input.is_action_pressed("down") or

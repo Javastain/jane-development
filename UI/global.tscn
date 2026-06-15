@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dt42caxh1qghc"]
+
+[ext_resource type="Script" uid="uid://cng8bskl1ua7a" path="res://UI/gobal.gd" id="1_8fmkn"]
+
+[node name="Global" type="Node2D" unique_id=1517530849]
+script = ExtResource("1_8fmkn")

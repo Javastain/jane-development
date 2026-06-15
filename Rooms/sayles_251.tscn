@@ -59,4 +59,4 @@ rotation = 3.1415927
 collision_layer = 2
 
 [node name="John" parent="." unique_id=2131272159 instance=ExtResource("6_nyg4v")]
-position = Vector2(1715, 567)
+position = Vector2(1715, 568)
