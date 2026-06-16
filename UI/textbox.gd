@@ -33,10 +33,10 @@ func _ready():
 func _process(delta):
 	if not initialized:
 		if (text_pages[page][0] == '&'):
-			$Speech.text = text_pages[page].erase(0, 1)
+			$Speech.text = text_pages[page].substr(1)
 		elif (text_pages[page][0] == '?'):
-			$Speech.text = text_pages[page].erase(0, 1)
-			$Speech.text = text_pages[page].substr(0, text_pages[page].find('['))
+			print(text_pages[page])
+			$Speech.text = text_pages[page].substr(1, text_pages[page].find('[')-1)
 			can_move_on = false
 		else:
 			$Speech.text = text_pages[page]
@@ -61,7 +61,6 @@ func _physics_process(delta):
 			_update_identifiers()
 
 func _update_identifiers():
-	print("okay")
 	if (text_pages[page][0] == '&'):
 		$Portrait.texture = jane_portrait
 		$Name.text = "Jane"
