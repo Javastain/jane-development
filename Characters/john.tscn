@@ -4,7 +4,7 @@
 load_path = "res://.godot/imported/john_sprite.png-63e6f8468e6c2db64fcb0f74ce60fe40.ctex"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ur53k"]
-size = Vector2(126.5, 123.5)
+size = Vector2(64, 123.5)
 
 [node name="John" type="CharacterBody2D" unique_id=1712948728 groups=["npcs"]]
 
@@ -13,4 +13,5 @@ scale = Vector2(2, 2)
 texture = SubResource("CompressedTexture2D_ev4xx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=233020459]
+position = Vector2(2, 0)
 shape = SubResource("RectangleShape2D_ur53k")

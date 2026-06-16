@@ -74,7 +74,7 @@ func talk(character):
 		"DebugJoe/Yes/nahhhh lol i lied":
 			textbox.text_pages = ["wth girl why"]
 		"DebugJoe/No":
-			textbox.text_pages = ["Are you sure?[idk bro; Yeah definitely]"]
+			textbox.text_pages = ["?Are you sure?[idk bro; Yeah definitely]"]
 		"DebugJoe/No/yeah i actually created you":
 			textbox.text_pages = ["damn"]
 		"DebugJoe/idk bro":
@@ -84,7 +84,35 @@ func talk(character):
 		"Ivy":
 			textbox.text_pages = ["Ivy dialogue."]
 		"Jay":
-			textbox.text_pages = ["Jay dialogue."]
+			textbox.text_pages = ["&Hi, Jay!", "?Mreow!![Yeah, it feels...; What?]"]
+		"Jay/Yeah, it feels...":
+			textbox.text_pages = ["&Yeah, it's... I don't know. Feels strange.", "Mrrreeeww...", "?Myeoow!![I'll be fine; I'm *terrified*]"]
+		"Jay/Yeah, it feels.../I'll be fine":
+			textbox.text_pages = ["&Thanks, Jay. I think it's going to work out.", "?Mrraoww :3[It's weird; Help the club]"]
+		"Jay/Yeah, it feels.../I'll be fine/It's weird":
+			textbox.text_pages = ["&It's weird, though, having it all end like this.", "myew myew myuw", "&Yeah... yeah. You're right. I think I needed to hear that.", "&Thank you, Jay.", ":3"]
+		"Jay/Yeah, it feels.../I'll be fine/Help the club":
+			textbox.text_pages = ["&You'll keep the club in shape when I'm gone, right?", "Myaow!!", "&Yeah. I know you will.", "&It was really nice getting to know you. Keep in touch, 'kay?", "Mmew!"]
+		"Jay/Yeah, it feels.../I'm *terrified*":
+			textbox.text_pages = ["&Oh, I'm absolutely *terrified.*", "?mrrrrrw[You'll do great; Yeah but... still]"]
+		"Jay/Yeah, it feels.../I'm *terrified*/You'll do great":
+			textbox.text_pages = ["&No, I know you'll do a great job running the club.", "&It's nice to know it'll outlive me.", "Mrow!!", "&Glad to hear it :)"]
+		"Jay/Yeah, it feels.../I'm *terrified*/Yeah but... still":
+			textbox.text_pages = ["&I know, but... still.", "&Thanks, though.", "Yeah, no problem!", "&wait what-"]
+		"Jay/What?":
+			textbox.text_pages = ["?meww :3[I don't understand; Meow!]"]
+		"Jay/What?/I don't understand":
+			textbox.text_pages = ["&I can't understand you.", "?myaw!![Those aren't words; Teach me]"]
+		"Jay/What?/I don't understand/Those aren't words":
+			textbox.text_pages = ["&That's not... you're not saying anything.", "&Are you trying to say words?", "mraow myaow myew :3", "All right. Uh... bye."]
+		"Jay/What?/I don't understand/Teach me":
+			textbox.text_pages = ["Mreow!!", "&Meow?", "mrrrowwww", "&mraoww", "myew!!", "&mraoww!!", "^･ω･^", "∩^⌒ω⌒^∩"]
+		"Jay/What?/Meow!":
+			textbox.text_pages = ["?mreaw ^･ω･^[myeow :3, Mrreow??]"]
+		"Jay/What?/Meow!/myeow :3":
+			textbox.text_pages = ["myeww!", "&mrawr"]
+		"Jay/What?/Meow!/Mrreow??":
+			textbox.text_pages = ["mraoww :3", "&mrr-mrow!", "&mrawoww!!!!"]
 		"Jeremie":
 			textbox.text_pages = ["Jeremie dialogue."]
 		"John":

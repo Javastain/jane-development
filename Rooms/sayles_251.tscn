@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://dwymtttsu4vbn" path="res://Characters/debug_joe.tscn" id="4_8rlx0"]
 [ext_resource type="PackedScene" uid="uid://c0lwhbjir1i6u" path="res://Characters/david.tscn" id="5_mgbv3"]
 [ext_resource type="PackedScene" uid="uid://bffn6mln26yvi" path="res://Characters/john.tscn" id="6_nyg4v"]
+[ext_resource type="AudioStream" uid="uid://cv5jy1un20m4u" path="res://Audio/alma mater.mp3" id="7_78s6p"]
+[ext_resource type="PackedScene" uid="uid://bsiybf6i5ylmu" path="res://Characters/jay.tscn" id="8_d0jb8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bbfda"]
 size = Vector2(1367, 561)
@@ -60,3 +62,14 @@ collision_layer = 2
 
 [node name="John" parent="." unique_id=2131272159 instance=ExtResource("6_nyg4v")]
 position = Vector2(1715, 568)
+collision_layer = 2
+
+[node name="AlmaMater" type="AudioStreamPlayer2D" parent="." unique_id=92005666]
+position = Vector2(1008, 600)
+stream = ExtResource("7_78s6p")
+autoplay = true
+parameters/looping = true
+
+[node name="Jay" parent="." unique_id=702069612 instance=ExtResource("8_d0jb8")]
+position = Vector2(1368, 911)
+collision_layer = 2
