@@ -104,11 +104,11 @@ func talk(character):
 		"Jay/What?/I don't understand":
 			textbox.text_pages = ["&I can't understand you.", "?myaw!![Those aren't words; Teach me]"]
 		"Jay/What?/I don't understand/Those aren't words":
-			textbox.text_pages = ["&That's not... you're not saying anything.", "&Are you trying to say words?", "mraow myaow myew :3", "All right. Uh... bye."]
+			textbox.text_pages = ["&That's not... you're not saying anything.", "&Are you trying to say words?", "mraow myaow myew :3", "&All right. Uh... bye."]
 		"Jay/What?/I don't understand/Teach me":
 			textbox.text_pages = ["Mreow!!", "&Meow?", "mrrrowwww", "&mraoww", "myew!!", "&mraoww!!", "^･ω･^", "∩^⌒ω⌒^∩"]
 		"Jay/What?/Meow!":
-			textbox.text_pages = ["?mreaw ^･ω･^[myeow :3, Mrreow??]"]
+			textbox.text_pages = ["?mreaw ^･ω･^[myeow :3; Mrreow??]"]
 		"Jay/What?/Meow!/myeow :3":
 			textbox.text_pages = ["myeww!", "&mrawr"]
 		"Jay/What?/Meow!/Mrreow??":

@@ -70,7 +70,7 @@ func _update_identifiers():
 			var i = 0
 			for choice in choices:
 				var scene = choice_scene.instantiate()
-				scene.position = Vector2(225, -75 - 30*i)
+				scene.position = Vector2(210, -105 + 30*i)
 				scene.text = choice
 				scene.answered.connect(_on_choice_chosen)
 				add_child(scene)
